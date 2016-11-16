@@ -1,0 +1,200 @@
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT
+$ pwd
+/e/GIT
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT
+$ cd Sealcode
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ tuch opis.txt
+bash: tuch: command not found
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ touch opis.txt
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        opis.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git add *.txt
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   opis.txt
+
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git commit -m 'Add opis.txt'
+[master (root-commit) 69525fa] Add opis.txt
+ Committer: Agnieszka Zimna <agnzim@st.amu.edu.pl>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 opis.txt
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+nothing to commit, working tree clean
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': iisniezka
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ISniezka/Sealcode.git/'
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': ISniezka
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 218 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ISniezka/Sealcode.git
+ * [new branch]      master -> master
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git push
+Everything up-to-date
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git brunch
+git: 'brunch' is not a git command. See 'git --help'.
+
+Did you mean this?
+        branch
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git branch
+* master
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git checkout -b testowy
+Switched to a new branch 'testowy'
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (testowy)
+$ git branch
+  master
+* testowy
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (testowy)
+$ git log
+commit 69525fa26a9a74a66307af6f2491deb8a1a91b0f
+Author: Agnieszka Zimna <agnzim@st.amu.edu.pl>
+Date:   Wed Nov 16 16:17:44 2016 +0100
+
+    Add opis.txt
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (testowy)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git branch
+* master
+  testowy
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git checkout testowy
+Switched to branch 'testowy'
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (testowy)
+$ tuch jakisglupiplikdlatestu.txt
+bash: tuch: command not found
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (testowy)
+$ touch jakisglupiplikdlatestu.txt
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (testowy)
+$ git add *
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (testowy)
+$ git commit -m "Add jakisglupiplikdlatestu"
+[testowy 665c77e] Add jakisglupiplikdlatestu
+ Committer: Agnieszka Zimna <agnzim@st.amu.edu.pl>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 jakisglupiplikdlatestu.txt
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (testowy)
+$ git push
+fatal: The current branch testowy has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin testowy
+
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (testowy)
+$ git push origin testowy
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 277 bytes | 0 bytes/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/ISniezka/Sealcode.git
+ * [new branch]      testowy -> testowy
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (testowy)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git merge testowy
+Updating 69525fa..665c77e
+Fast-forward
+ jakisglupiplikdlatestu.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 jakisglupiplikdlatestu.txt
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/ISniezka/Sealcode.git
+   69525fa..665c77e  master -> master
+
+AMUAD+agnzim@DESKTOP-4EQ9600 MINGW64 /e/GIT/Sealcode (master)
+$
